@@ -1,0 +1,4 @@
+Theme name:    Pinteresting
+Description:   A Pinterest inspired theme.
+Author name:   Josh Medeski
+Author site:   http://joshmedeski.com

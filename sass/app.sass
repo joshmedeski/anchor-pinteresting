@@ -1,0 +1,152 @@
+// Global Foundation Settings
+@import settings
+
+// Comment out this import if you are customizing you imports below
+@import foundation
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/foundation-global" // *always required
+// @import "foundation/components/global" // *always required
+// @import "foundation/components/grid"
+// @import "foundation/components/visibility"
+// @import "foundation/components/block-grid"
+// @import "foundation/components/type"
+// @import "foundation/components/buttons"
+// @import "foundation/components/forms" // *requires components/buttons
+// @import "foundation/components/custom-forms" // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups" // *requires components/buttons
+// @import "foundation/components/dropdown-buttons" // *requires components/buttons
+// @import "foundation/components/split-buttons" // *requires components/buttons
+// @import "foundation/components/flex-video"
+// @import "foundation/components/section"
+// @import "foundation/components/top-bar"  // *requires components/grid
+// @import "foundation/components/orbit"
+// @import "foundation/components/reveal"
+// @import "foundation/components/joyride"
+// @import "foundation/components/clearing"
+// @import "foundation/components/alert-boxes"
+// @import "foundation/components/breadcrumbs"
+// @import "foundation/components/keystrokes"
+// @import "foundation/components/labels"
+// @import "foundation/components/inline-lists"
+// @import "foundation/components/pagination"
+// @import "foundation/components/panels"
+// @import "foundation/components/pricing-tables"
+// @import "foundation/components/progress-bars"
+// @import "foundation/components/side-nav"
+// @import "foundation/components/sub-nav"
+// @import "foundation/components/switch"
+// @import "foundation/components/magellan"
+// @import "foundation/components/tables"
+// @import "foundation/components/thumbs"
+// @import "foundation/components/tooltips"
+// @import "foundation/components/dropdown"
+
+// Mixins
+@mixin margin
+	margin-top: emCalc(15px)
+	margin-left: emCalc(5px)
+	margin-right: emCalc(5px)
+@mixin radius
+	-webkit-border-radius: 4px
+	-moz-border-radius: 4px
+	-ms-border-radius: 4px
+	-o-border-radius: 4px
+	border-radius: 4px
+
+.content-box
+	-webkit-box-shadow: none
+	-moz-box-shadow: none
+	box-shadow: none
+
+
+section, header
+	@include margin
+	@include radius
+	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33)
+	-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33)
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,0.33)
+	background: #fff
+	overflow: hidden
+	color: #333
+	// height: 153px
+	img
+		@include grid-column($columns: 3, $collapse: true)
+	.title
+		@include grid-column(9)
+article
+	@include grid-column(12)
+	padding-top: 2em
+	padding-bottom: 0.8em
+footer
+	color: #b3b4b3
+	padding: 1em 0
+	a
+		color: #b3b4b3
+		border-bottom: 1px dotted #b3b4b3
+	a:hover
+		color: darken(#b3b4b3,10%)
+
+.bar
+	@include margin
+	@include radius
+	background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3f3f3), color-stop(100%, #e5e5e5))
+	background: -webkit-linear-gradient(#f3f3f3,#e5e5e5)
+	background: -moz-linear-gradient(#f3f3f3,#e5e5e5)
+	background: -o-linear-gradient(#f3f3f3,#e5e5e5)
+	background: linear-gradient(#f3f3f3,#e5e5e5)
+	-webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.14)
+	-moz-box-shadow: 0 1px 4px rgba(0,0,0,0.14)
+	box-shadow: 0 1px 4px rgba(0,0,0,0.14)
+	overflow: hidden
+	background-color: #f3f3f3
+	border-left: 1px solid #d4d4d4
+	border-left: 1px solid rgba(0,0,0,0.17)
+	border-top: 1px solid rgba(0,0,0,0.1)
+	border-right: 1px solid rgba(0,0,0,0.17)
+	border-left: 1px solid #d4d4d4
+	border-bottom: 1px solid rgba(0,0,0,0.2)
+	clear: both
+	color: #333
+	height: 44px
+	line-height: 44px
+	margin-bottom: 2px
+	max-width: 10000px
+	position: relative
+	
+	.categories 
+		ul
+			float: right
+
+	#navigation, .categories
+		@include grid-column($columns: 6, $collapse: true)
+		ul
+			display: block
+			list-style-type: none
+			li:first-child
+				border-left: 1px solid #cdcdcd
+			li
+				border-right: 1px solid #cdcdcd
+				float: left
+				line-height: emCalc(40px)
+				a.active
+					background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f4f4f4))
+					background: -webkit-linear-gradient(#ffffff,#f4f4f4)
+					background: -moz-linear-gradient(#ffffff,#f4f4f4)
+					background: -o-linear-gradient(#ffffff,#f4f4f4)
+					background: linear-gradient(#ffffff,#f4f4f4)
+					background-color: #fff
+					color: #333
+				a
+					-webkit-box-shadow: 0 0 1px rgba(255,255,255,0.9) inset
+					-moz-box-shadow: 0 0 1px rgba(255,255,255,0.9) inset
+					box-shadow: 0 0 1px rgba(255,255,255,0.9) inset
+					color: #777
+					display: block
+					padding: 1px 20px 0
+					text-shadow: 0 1px 0 rgba(255,255,255,0.8)
+
+#copyright
+	padding-top: emCalc(10px)
