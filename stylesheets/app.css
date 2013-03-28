@@ -5537,7 +5537,7 @@ table tfoot tr td {
   max-width: 800px;
 }
 
-/* line 59, ../sass/app.sass */
+/* line 63, ../sass/app.sass */
 section, header {
   margin-top: 0.9375em;
   margin-left: 0.3125em;
@@ -5554,7 +5554,7 @@ section, header {
   overflow: hidden;
   color: #333333;
 }
-/* line 69, ../sass/app.sass */
+/* line 71, ../sass/app.sass */
 section img, header img {
   position: relative;
   width: 25%;
@@ -5564,7 +5564,7 @@ section img, header img {
   padding-right: 0;
   float: left;
 }
-/* line 71, ../sass/app.sass */
+/* line 73, ../sass/app.sass */
 section .title, header .title {
   position: relative;
   padding-left: 0.9375em;
@@ -5574,7 +5574,38 @@ section .title, header .title {
   margin-bottom: 0.625em;
 }
 
-/* line 75, ../sass/app.sass */
+/* line 78, ../sass/app.sass */
+.archives li {
+  margin-top: 0.9375em;
+  margin-left: 0.3125em;
+  margin-right: 0.3125em;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+  background: white;
+  text-align: center;
+}
+/* line 84, ../sass/app.sass */
+.archives li img {
+  position: relative;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  float: left;
+}
+/* line 86, ../sass/app.sass */
+.archives a {
+  font-size: 0.625em;
+}
+
+/* line 90, ../sass/app.sass */
 article {
   position: relative;
   padding-left: 0.9375em;
@@ -5585,29 +5616,29 @@ article {
   padding-bottom: 0.8em;
 }
 
-/* line 80, ../sass/app.sass */
+/* line 95, ../sass/app.sass */
 .comments {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
 
-/* line 85, ../sass/app.sass */
+/* line 100, ../sass/app.sass */
 footer {
   color: #b3b4b3;
   padding: 1em 0;
 }
-/* line 88, ../sass/app.sass */
+/* line 103, ../sass/app.sass */
 footer a {
   color: #b3b4b3;
   border-bottom: 1px dotted #b3b4b3;
 }
-/* line 91, ../sass/app.sass */
+/* line 106, ../sass/app.sass */
 footer a:hover {
   color: #999b99;
 }
 
-/* line 94, ../sass/app.sass */
+/* line 109, ../sass/app.sass */
 .bar {
   margin-top: 0.9375em;
   margin-left: 0.3125em;
@@ -5641,7 +5672,7 @@ footer a:hover {
   max-width: 10000px;
   position: relative;
 }
-/* line 121, ../sass/app.sass */
+/* line 136, ../sass/app.sass */
 .bar .categories {
   position: relative;
   width: 58.33333%;
@@ -5651,19 +5682,19 @@ footer a:hover {
   padding-right: 0;
   float: left;
 }
-/* line 122, ../sass/app.sass */
+/* line 137, ../sass/app.sass */
 .bar .categories ul {
   float: right;
 }
-/* line 124, ../sass/app.sass */
+/* line 139, ../sass/app.sass */
 .bar .categories ul li:first-child {
   border-left: 1px solid #cdcdcd;
 }
-/* line 126, ../sass/app.sass */
+/* line 141, ../sass/app.sass */
 .bar .categories ul li:last-child {
   border-right: none;
 }
-/* line 129, ../sass/app.sass */
+/* line 144, ../sass/app.sass */
 .bar #navigation {
   position: relative;
   width: 41.66667%;
@@ -5673,18 +5704,18 @@ footer a:hover {
   padding-right: 0;
   float: left;
 }
-/* line 133, ../sass/app.sass */
+/* line 148, ../sass/app.sass */
 .bar #navigation ul, .bar .categories ul {
   display: block;
   list-style-type: none;
 }
-/* line 137, ../sass/app.sass */
+/* line 152, ../sass/app.sass */
 .bar #navigation ul li, .bar .categories ul li {
   border-right: 1px solid #cdcdcd;
   float: left;
   line-height: 2.5em;
 }
-/* line 141, ../sass/app.sass */
+/* line 156, ../sass/app.sass */
 .bar #navigation ul li a.active, .bar .categories ul li a.active {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, white), color-stop(100%, #f4f4f4));
   background: -webkit-linear-gradient(white, #f4f4f4);
@@ -5694,7 +5725,7 @@ footer a:hover {
   background-color: white;
   color: #333333;
 }
-/* line 149, ../sass/app.sass */
+/* line 164, ../sass/app.sass */
 .bar #navigation ul li a, .bar .categories ul li a {
   -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.9) inset;
   -moz-box-shadow: 0 0 1px rgba(255, 255, 255, 0.9) inset;
@@ -5705,22 +5736,22 @@ footer a:hover {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
-/* line 158, ../sass/app.sass */
+/* line 173, ../sass/app.sass */
 #copyright {
   padding-top: 0.625em;
 }
 
 @media only screen and (max-width: 32.8125em) {
-  /* line 164, ../sass/app.sass */
+  /* line 179, ../sass/app.sass */
   header h1 {
     font-size: 1.875em;
   }
-  /* line 166, ../sass/app.sass */
+  /* line 181, ../sass/app.sass */
   header p {
     font-size: 0.3125em;
   }
 
-  /* line 169, ../sass/app.sass */
+  /* line 184, ../sass/app.sass */
   section img, header img {
     position: relative;
     width: 100%;
@@ -5730,7 +5761,7 @@ footer a:hover {
     padding-right: 0;
     float: left;
   }
-  /* line 171, ../sass/app.sass */
+  /* line 186, ../sass/app.sass */
   section .title, header .title {
     position: relative;
     padding-left: 0.9375em;
@@ -5739,7 +5770,7 @@ footer a:hover {
     float: left;
   }
 
-  /* line 173, ../sass/app.sass */
+  /* line 188, ../sass/app.sass */
   .bar #navigation {
     position: relative;
     width: 100%;
