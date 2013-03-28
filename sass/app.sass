@@ -56,12 +56,6 @@
 	-o-border-radius: 4px
 	border-radius: 4px
 
-.content-box
-	-webkit-box-shadow: none
-	-moz-box-shadow: none
-	box-shadow: none
-
-
 section, header
 	@include margin
 	@include radius
@@ -76,10 +70,18 @@ section, header
 		@include grid-column($columns: 3, $collapse: true)
 	.title
 		@include grid-column(9)
+		margin-bottom: emCalc(10px)
+
 article
 	@include grid-column(12)
 	padding-top: 2em
 	padding-bottom: 0.8em
+
+.comments
+	-webkit-box-shadow: none
+	-moz-box-shadow: none
+	box-shadow: none
+
 footer
 	color: #b3b4b3
 	padding: 1em 0
@@ -119,14 +121,19 @@ footer
 	.categories 
 		ul
 			float: right
+			li:first-child
+				border-left: 1px solid #cdcdcd
+			li:last-child
+				border-right: none
+		@include grid-column($columns: 7, $collapse: true)
+	#navigation
+		@include grid-column($columns: 5, $collapse: true)
 
 	#navigation, .categories
-		@include grid-column($columns: 6, $collapse: true)
 		ul
 			display: block
 			list-style-type: none
-			li:first-child
-				border-left: 1px solid #cdcdcd
+
 			li
 				border-right: 1px solid #cdcdcd
 				float: left
@@ -150,3 +157,19 @@ footer
 
 #copyright
 	padding-top: emCalc(10px)
+
+// Small Screens
+@media only screen and (max-width: emCalc(525px))
+	header
+		h1
+			font-size: emCalc(30px)
+		p
+			font-size: emCalc(5px)
+	section, header
+		img
+			@include grid-column($columns: 12, $collapse: true)
+		.title
+			@include grid-column(12)
+	.bar #navigation
+		@include grid-column($columns: 12, $collapse: true)
+

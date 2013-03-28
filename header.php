@@ -50,8 +50,10 @@
 				<h1><?php echo site_name(); ?></h1>
 				<h3 class="subheader"><?php echo site_description(); ?></h3>
 			<!-- Start Twitter -->
+			<span class="hide-for-small">
 			<a href="https://twitter.com/joshmedeski" class="twitter-follow-button" data-show-count="false">Follow @joshmedeski</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			</span>
 			<!-- End Twitter -->
 			</div>
 		</header>

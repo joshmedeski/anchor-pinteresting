@@ -5,7 +5,10 @@
 	<section>
 		<a href="<?php echo article_url(); ?>"><img src="<?php echo article_custom_field('thumbnail'); ?>" alt="<?php echo article_title(); ?>"></a>
 		<div class="title">
-			<h2><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h2>
+			<style>
+			h2,a {color:#<?php echo article_custom_field('color', '777')?>;}
+			</style>
+			<h2><?php echo article_title(); ?></h2>
 			<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
 		</div>
 	</section>
@@ -21,7 +24,7 @@
 			<div class="addthis_toolbox addthis_default_style ">
 				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
 				<a class="addthis_button_tweet"></a>
-				<a class="addthis_button_google_plusone" g:plusone:size="medium"></a> 
+				<a class="addthis_button_google_plusone hide-for-small" g:plusone:size="medium"></a> 
 				<a class="addthis_counter addthis_pill_style"></a>
 			</div>
 			<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>

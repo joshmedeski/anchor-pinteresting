@@ -2,7 +2,7 @@
 has_search_results();
 ?>
 
-		<section class="content-box">
+		<section>
 			<h1><?php echo page_title(); ?></h1>
 
 			<?php echo page_content(); ?>
