@@ -4,7 +4,7 @@
     <?php while(posts()): ?>
 		<div class="row">
 			<section>
-				<a href="<?php echo article_url(); ?>"><img src="<?php echo article_custom_field('thumbnail'); ?>" alt="<?php echo article_title(); ?>"></a>
+				<a href="<?php echo article_url(); ?>"><img src="<?php echo article_custom_field('thumbnail'); ?>" alt="thumbnail-<?php echo article_title(); ?>"></a>
 				<div class="title">
 					<h2><a href="<?php echo article_url(); ?>"  style="color: #<?php echo article_custom_field('color', '777')?>"><?php echo article_title(); ?></a></h2>
 					<p><?php echo article_description(); ?></p>

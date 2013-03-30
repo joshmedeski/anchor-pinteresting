@@ -3,15 +3,18 @@
 <!-- Title -->
 <div class="row">
 	<section>
-		<a href="<?php echo article_url(); ?>"><img src="<?php echo article_custom_field('thumbnail'); ?>" alt="<?php echo article_title(); ?>"></a>
+		<img src="<?php echo article_custom_field('thumbnail'); ?>" alt="thumbnail-<?php echo article_title(); ?>">
 		<div class="title">
 			<style>
 			h2,a {color:#<?php echo article_custom_field('color', '777')?>;}
 			</style>
 			<h2><?php echo article_title(); ?></h2>
-			<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
-		</div>
-	</section>
+					<p><?php echo article_description(); ?></p>
+					<div class="meta">
+						<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> in <a href="<?php echo category_url(); ?>"><? echo category_title(); ?></a>
+					</div>
+				</div>
+			</section>
 </div>
 
 <!-- Article -->
