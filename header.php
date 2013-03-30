@@ -23,14 +23,20 @@
 	<script>var base = '<?php echo theme_url(); ?>';</script>
 
 	<script src="<?php echo theme_url('javascripts/vendor/custom.modernizr.js'); ?>"></script>
+	
+	<!-- Addthis Analytics -->
+	<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f3ff4eb21813601"></script>
 
+	<!-- Open Graph -->
   <meta name="generator" content="Anchor CMS">
-  <meta property="og:title" content="<?php echo site_name(); ?>">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="<?php echo current_url(); ?>">
-  <!-- <meta property="og:image" content="<?php echo theme_url('img/og_image.gif'); ?>"> -->
   <meta property="og:site_name" content="<?php echo site_name(); ?>">
-  <meta property="og:description" content="<?php echo site_description(); ?>">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="<?php echo article_title(); ?>">
+  <meta property="og:description" content="<?php echo article_description(); ?>">
+	<meta property="og:article:author" content="<?php echo article_author(); ?>">
+  <meta property="og:image" content="http://joshmedeski.com/<?php echo article_custom_field('thumbnail'); ?>">
+  <meta property="og:url" content="<?php echo current_url(); ?>">
 
 	<?php if(customised()): ?>
 	    <!-- Custom CSS -->
