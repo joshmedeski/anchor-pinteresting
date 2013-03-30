@@ -49,12 +49,18 @@
 			<div class="title">
 				<h1><?php echo site_name(); ?></h1>
 				<h3 class="subheader"><?php echo site_description(); ?></h3>
-			<!-- Start Twitter -->
-			<span class="hide-for-small">
-			<a href="https://twitter.com/joshmedeski" class="twitter-follow-button" data-show-count="false">Follow @joshmedeski</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-			</span>
-			<!-- End Twitter -->
+<!-- AddThis Follow BEGIN -->
+<div class="addthis_toolbox addthis_32x32_style addthis_default_style">
+<a class="addthis_button_facebook_follow" addthis:userid="josh.medeski"></a>
+<a class="addthis_button_twitter_follow" addthis:userid="JoshMedeski"></a>
+<a class="addthis_button_linkedin_follow" addthis:userid="joshmedeski"></a>
+<a class="addthis_button_google_follow" addthis:userid="107309290952544286992"></a>
+<a class="addthis_button_pinterest_follow" addthis:userid="jcwebs09"></a>
+<a class="addthis_button_instagram_follow" addthis:userid="jcwebs09"></a>
+<a class="addthis_button_foursquare_follow" addthis:userid="joshmedeski"></a>
+</div>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4f3ff4eb21813601"></script>
+<!-- AddThis Follow END -->
 			</div>
 		</header>
 	</div>
