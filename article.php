@@ -11,7 +11,7 @@
 			<h2><?php echo article_title(); ?></h2>
 					<p><?php echo article_description(); ?></p>
 					<div class="meta">
-						<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> in <a href="<?php echo category_url(); ?>"><? echo category_title(); ?></a>
+						<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> in <a href="<?php echo category_url(); ?>"><? echo category_title(); ?></a> by <a href="https://plus.google.com/107309290952544286992?rel=author">Josh Medeski</a>
 					</div>
 				</div>
 			</section>

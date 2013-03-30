@@ -1,6 +1,6 @@
 <!-- Footer -->
 <footer class="row">
-	<p class="text-center small subheader">&copy Copyright <?php print(Date("Y")); ?> <?php echo site_name(); ?>. Powered by <a href="//anchorcms.com/" target="_blank">Anchor</a></p>
+	<p class="text-center small subheader">&copy Copyright <?php print(Date("Y")); ?> <a href="https://plus.google.com/107309290952544286992?rel=author"><?php echo site_name(); ?></a>. Powered by <a href="//anchorcms.com/" target="_blank">Anchor</a></p>
 </footer>
 
   <script>
