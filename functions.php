@@ -51,7 +51,6 @@ function relative_time($time) {
 }
 
 /* Discus */
-function disqus_meta() {
-  return Config::get('meta.disqus');
-  return Config::meta('disqus');
+function site_meta($key, $default = '') {
+  return Config::meta('custom_' . $key, $default);
 }

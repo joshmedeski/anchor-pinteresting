@@ -7,7 +7,10 @@
 				<a href="<?php echo article_url(); ?>"><img src="<?php echo article_custom_field('thumbnail'); ?>" alt="<?php echo article_title(); ?>"></a>
 				<div class="title">
 					<h2><a href="<?php echo article_url(); ?>"  style="color: #<?php echo article_custom_field('color', '777')?>"><?php echo article_title(); ?></a></h2>
-					<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time>
+					<p><?php echo article_description(); ?></p>
+					<div class="meta">
+						<time datetime="<?php echo date(DATE_W3C, article_time()); ?>"><?php echo relative_time(article_time()); ?></time> in <a href="<?php echo category_url(); ?>"><? echo category_title(); ?></a>
+					</div>
 				</div>
 			</section>
 		</div>
